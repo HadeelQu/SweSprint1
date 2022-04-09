@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styleindoor.css">
+    <title>Newly Opened</title>
+</head>
+
+<body>
+
+   <header>
+       <nav>
+           <a href="index.html"><img src="img/logoSWE.png" alt="logo" height="150px" width="150px"></a> 
+           <div class="nav-links">
+               <ul>
+                <li><a href="index2.html">Home</a></li>
+                   <li><a href="Admin log in.html">Admin log-In</a></li>
+                   <li><a href="Admin sign up.html">Admin Sign-Up</a></li>
+                   <li><a href="index.html">Admin Sign-Out</a></li>
+                        <!-- Theme Change Button START------------->
+                <img src="img/moon.png" id="moon" alt="moon dark theme">
+               </ul>
+           </div>
+       </nav>
+    </header>
+
+    <div class="add">
+      <button type="submit" onclick="add();return false;"><img src="img/icons8-plus-48.png" alt="add" id="add" height="70px" width="70px"></button>
+      <p id="addcoffee" style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add</p><br>
+
+      <p>Sort Newly Open Coffee Shops By&nbsp;
+        <select name="sortby">
+          <option value="new">newest</option>
+          <option value="old">oldest</option>
+        </select></p>
+  </div>
+  
+  <div class="cafes">
+  <div class="container">
+    <form action="#">
+     
+      <h3 class="center"><button type="submit"><img src="img/icons8-delete-24.png" alt="delete" id="delete"></button>&nbsp;<button type="submit"><img src="img/icons8-update-60.png" alt="update" id="update" height="22px" width="22px"></button>&nbsp;&nbsp;Capri Café</h3>
+      <p>Opened: 2 weeks ago</p>
+          <p> 8-04-2022</p>
+      <br>
+      <img src="img/newly.jpeg" alt="bateel cafe" class="canter" height="200px" width="200px"><br><br>
+      <div class="textarea">
+        <textarea cols="25" rows="2" placeholder=" Write your name.."></textarea>
+      </div><br>
+      <div class="textarea">
+        <textarea cols="30" rows="5"placeholder=" Describe your experience.."></textarea>
+      </div><br>
+      <input type="submit" value="Post Review" class="btn"><br><br>
+      <hr><br>
+      <h6><img src="img/icons8-user-50.png" alt="user" height="20px" width="20px">Sarah Saleh</h6>
+      <p style="font-size: 12px;">2months ago</p><br>
+      <b><p style="font-size: 14px;">I highly recommend this cafe!</p></b><br><br>
+      <hr><br>
+      <h6><img src="img/icons8-user-50.png" alt="user" height="20px" width="20px"> Maryam ah</h6>
+      <p style="font-size: 12px;">1months ago</p><br>
+      <b><p style="font-size: 14px;">i loved it!</p></b>
+    </form>
+  </div></div>
+
+    <script>
+        var moon = document.getElementById("moon");
+      
+        moon.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")){
+            moon.src = "img/sun.png";
+          }
+          else {
+            moon.src = "img/moon.png";
+          }
+        }
+         </script> 
+          </script>
+          <script>
+              function add(){
+                 location.replace("addrest.html");
+              }
+          </script>
+           <script>
+             function upd(){
+                location.replace("updatecoffee.html");
+             }
+         </script>
+ 
+</body>
+
+<footer>
+    <br>
+    <p>© 2022 All Rights Reserved, Coffee Detective® </p>
+    </footer>
+</html>

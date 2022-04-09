@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src ="js/js.js"> </script>
+    <title>Admin sign-in</title>
+</head>
+
+<body>
+
+   <header>
+       <nav>
+           <a href="index.html"><img src="img/logoSWE.png" alt="logo" height="150px" width="150px"></a> 
+           <div class="nav-links">
+               <ul>
+                <li><a href="index.html">Home</a></li>
+                   <li><a href="Admin log in.html">Admin log-In</a></li>
+                   <li><a href="Admin sign up.html">Admin Sign-Up</a></li>
+                        <!-- Theme Change Button START------------->
+                <img src="img/moon.png" id="moon" alt="moon dark theme">
+               </ul>
+           </div>
+       </nav>
+    </header>
+
+    <div class="FormContainer1">
+    <form method="post" onsubmit=" validateSignUp();">
+        <fieldset id="form2">
+						<legend> Fill Admin's information </legend>
+                    <label>Admin's ID:</label>
+                    <input type="text" class="form-control" id="employee_ID" name="employee_ID" placeholder="Enter your ID"><br>
+                    
+                    <label>Admin's First name:</label>
+                    <input type="text" class="form-control" id="employee_FirstName" name="employee_FirstName" placeholder="Enter your First Name"><br>
+                    
+                    <label>Admin's Last name:</label>
+                    <input type="text" class="form-control" id="employee_LastName" name="employee_LastName" placeholder="Enter your Last Name"><br>
+
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="passworddd" name="passworddd" placeholder="Password length must be 5-10 characters"><br>
+
+                    
+                
+            <button type="submit" class="btnsignup" value="Sign Up"  style="color: black; font-size: medium;">Sign Up</button><br>
+        </fieldset>
+        </form></div>
+        <script>
+            var moon = document.getElementById("moon");
+          
+            moon.onclick = function() {
+              document.body.classList.toggle("dark-theme");
+              if(document.body.classList.contains("dark-theme")){
+                moon.src = "img/sun.png";
+              }
+              else {
+                moon.src = "img/moon.png";
+              }
+            }
+             </script> 
+
+</body>
+
+<footer>
+    <br>
+    <p>© 2022 All Rights Reserved, Coffee Detective® </p>
+    </footer>
+</html>
